@@ -4,9 +4,11 @@ import { NAVSR } from "./navSR"
 import { SEC } from "./search"
 import { BTNN } from "./btn"
 import { CNAV } from "./navx/cnav"
+import { XLS } from './session/8xloader'
 
 export default function Reg(){
     let ground_image = ['blue', 'pink', 'black', 'red', 'yellow', 'orange']
+    let keyiq = "인기 소설"
     return (
         <div className="main" style={{}}>
             <div className="apps" style={{}}>
@@ -34,8 +36,8 @@ export default function Reg(){
                                                     <div className="textarea">
 
                                                     </div>
-                                                    <div className="bottom-text">
-
+                                                    <div className="bottom-text" style={{color:"white"}}>
+                                                        어떻게 하면?
                                                     </div>
                                                 </div>
                                             )
@@ -43,6 +45,7 @@ export default function Reg(){
                                     }
                                     {/* sidebar1 */}
                                 </div>
+                                <XLS core={keyiq}></XLS>
                             </div>
                         </div>
                     </div>
