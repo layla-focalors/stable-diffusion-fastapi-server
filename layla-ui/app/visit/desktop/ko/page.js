@@ -6,6 +6,8 @@ import { BTNN } from "./btn"
 import { CNAV } from "./navx/cnav"
 import { XLS } from './session/8xloader'
 import { BDG } from "./session/bigwindow"
+import { INV } from "./modules/flash"
+import { INC } from './modules/inf'
 
 export default function Reg(){
     let ground_image = ['blue', 'pink', 'black', 'red', 'yellow', 'orange']
@@ -30,6 +32,7 @@ export default function Reg(){
                         <div className="c-layer">
                             <div className="c-display" style={{backgroundColor:"black"}}>
                                 <div className="c-d-side">
+                                    DHIUAHDU
                                     {/* sidebar0 */}
                                 </div>
                                 <div className="c-d-side-s">
@@ -66,6 +69,10 @@ export default function Reg(){
                                         )
                                     })
                                 }
+                                <div style={{width:"100%", height:"100px"}}></div>
+                                <INV></INV>
+                                <div style={{width:"100%", height:"100px"}}></div>
+                                <INC></INC>
                             </div>
                         </div>
                     </div>
